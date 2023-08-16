@@ -12,7 +12,7 @@ function App() {
   const groupOptions = ['status', 'user', 'priority'];
 
   useEffect(() => {
-    fetch('https://apimocha.com/quicksell/data') // Replace with the actual API endpoint
+    fetch('https://api.quicksell.co/v1/internal/frontend-assignment') // Replace with the actual API endpoint
       .then(response => response.json())
       .then(data => {
         setTickets(data.tickets);
